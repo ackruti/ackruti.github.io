@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/InterVariable.woff2') format('woff2-variations');
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/fonts/JetBrainsMonoVariable.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-feature-settings: 'cv11','cv10','tnum';
+}
+
+.content :where(p):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    line-height: 1.5rem;
+}
+
+.content :where(code):not(:where(.hextra-code-block code, [class~=not-prose],[class~=not-prose] *)) {
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.09;
+}
+
+table {
+    font-size: 0.84em;
+}
+
+thead {
+    background-color: rgb(227, 227, 235);
+}
+
+:is(html[class~="dark"]) thead {
+    background-color: rgb(63, 63, 72);
+}
+
+.content :where(table):not(:where(.hextra-code-block table, [class~=not-prose],[class~=not-prose] *)) th {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+.content :where(table):not(:where(.hextra-code-block table, [class~=not-prose],[class~=not-prose] *)) td {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}

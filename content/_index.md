@@ -1,7 +1,9 @@
-+++
-title = ''
-date = 2024-05-19T08:51:07-05:00
-draft = true
-+++
+---
+title: Hextra Theme
+layout: hextra-home
+width: normal
+---
 
-# Hello, World!
+{{< introduction >}}
+
+{{< blog-list >}}

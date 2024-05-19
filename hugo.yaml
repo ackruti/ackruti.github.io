@@ -2,3 +2,67 @@ baseURL: https://www.akruti.dev/
 languageCode: en-us
 title: akruti.dev
 theme: hextra
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+enableRobotsTXT: true
+enableEmoji: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+    - name: Search
+      weight: 3
+      params:
+        type: search
+    - name: LinkedIn
+      weight: 4
+      url: "https://linkedin.com/in/akruti-ambade/"
+      params:
+        icon: linkedin
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  page:
+    width: wide
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+  blog:
+    list:
+      displayTags: true
+      sortBy: date
+      sortOrder: desc
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: full
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]

@@ -1,5 +1,11 @@
-+++
-title = 'Blog'
-date = 2024-05-19T08:51:14-05:00
-draft = true
-+++
+---
+title: "Blog"
+width: normal
+---
+
+<div style="text-align: center; margin-top: 1em;">
+{{< hextra/hero-badge link="index.xml" >}}
+  <span>RSS Feed</span>
+  {{< icon name="rss" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
+</div>
