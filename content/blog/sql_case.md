@@ -1,7 +1,7 @@
 ---
 title: 'SQL Case: The Swiss Army Knife'
 date: 2024-05-20
-draft: true
+draft: false
 authors:
   - name: Akruti Ambade
     link: https://github.com/ackruti
