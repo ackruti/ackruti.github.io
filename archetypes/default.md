@@ -1,6 +1,7 @@
 ---
 title: '{{ replace .File.BaseFileName "-" " " | humanize | title }}'
-date: {{ .Date }}
+date: {{ .Date | time.Format "2006-01-02" }}
+draft: true
 authors:
   - name: Akruti Ambade
     link: https://github.com/ackruti
