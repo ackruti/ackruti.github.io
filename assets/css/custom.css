@@ -61,3 +61,28 @@ thead {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
 }
+
+.content :where(ol):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    margin-top: 0.5rem;
+    list-style-type: decimal;
+}
+
+.content :where(img):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border-width: 3px;
+    /* border-style: border-solid; */
+    border-color: rgb(209, 213, 219);
+}
+
+:is(html[class~="dark"]) .content :where(img):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    border-color: rgb(55, 65, 81);
+}
+
+.hextra-code-block .filename {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
