@@ -26,6 +26,11 @@ Visit the blog at [http://localhost:1313/](http://localhost:1313/)
 hugo new content/blog/test_post.md
 ```
 
+### Add New Bundle Post
+```
+hugo new --kind page-bundle content/blog/test_bundle_post
+```
+
 ### Update Theme
 To update all submodules in your repository to their latest commits, run the following command in MacOS terminal
 ```
