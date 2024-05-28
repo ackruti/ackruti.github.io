@@ -10,8 +10,8 @@ authors:
 summary: Update your simple Rank chart with an intuitive, advanced and configureable Curvy Bump Chart.
 tags:
   - tableau
-  - visualization
   - tutorial
+  - visualization
 ---
 
 Are you left scratching your head over the title of this post and what it means? Well, so was I, until I had a use-case that was solved using the brilliant and rarely used __Curvy Bump Chart__. The use case was to visualize the ranking of different teams of the IPL Cricket tournament and to show their rise and fall over the years.
