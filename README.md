@@ -12,6 +12,9 @@ brew install hugo
 # Clone repository
 git clone https://github.com/ackruti/ackruti.github.io
 
+# Get theme submodule
+git submodule update --init
+
 # Navigate to the cloned directory
 cd ackruti.github.io
 
